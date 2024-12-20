@@ -176,14 +176,14 @@ function AppAppBar() {
                       Accueil
                     </Typography>
                   </MenuItem>
-                  <MenuItem
+                  {/*<MenuItem
                     onClick={() => scrollToSection('Partenariat')}
                     sx={{ py: '6px', px: '12px' }}
                   >
                     <Typography variant="body1" color={'#606060'}>
                       Partenariat
                     </Typography>
-                  </MenuItem>
+                  </MenuItem>*/}
                   <MenuItem
                     onClick={() => scrollToSection('Location')}
                     sx={{ py: '6px', px: '12px' }}

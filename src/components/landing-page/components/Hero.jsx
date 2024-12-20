@@ -40,7 +40,7 @@ export default function Hero() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScI4yELiRiDv4ve4iMMV0md2rZlTKMQ4p82z5NnHw2hGSaB3Q/viewform?usp=dialog"
               target="_blank"
               size="large"
-              sx={{ width: { sm: 200, xs: 20 }, fontSize: { sm: 24, xs: 6 }, color: 'white', backgroundColor: '#EF5244', marginTop: { sm: '250px', xs: '0px' } }}
+              sx={{ width: { sm: 200, xs: 30 }, fontSize: { sm: 24, xs: 6 }, color: 'white', backgroundColor: '#EF5244', marginTop: { sm: '250px', xs: '0px' } }}
             >
               Inscrivez-vous
             </Button>

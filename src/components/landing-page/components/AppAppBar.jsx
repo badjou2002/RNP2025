@@ -189,7 +189,7 @@ function AppAppBar() {
                     sx={{ py: '6px', px: '12px' }}
                   >
                     <Typography variant="body1" color={'#606060'}>
-                      Location
+                      Localisation
                     </Typography>
                   </MenuItem>
                   <MenuItem

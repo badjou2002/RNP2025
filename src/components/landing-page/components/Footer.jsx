@@ -173,15 +173,17 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href=""
+            href="https://www.facebook.com/profile.php?id=61570523956187"
             aria-label="Facebook"
+            target='_blank'
             sx={{ alignSelf: 'center' }}
           >
             <FacebookIcon />
           </IconButton>
           <IconButton
             color="inherit"
-            href=""
+            href="https://www.instagram.com/rnp1_2025/"
+            target='_blank'
             aria-label="Instagram"
             sx={{ alignSelf: 'center' }}
           >

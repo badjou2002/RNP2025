@@ -21,12 +21,42 @@ const userTestimonials = [
   {
     avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1734630030/IMG_1623-DeNoiseAI-low-light-removebg-preview_twwypn.png",
     name: 'Maryam BEN ZINA',
-    occupation: 'Présidente JCI Sidi Mansour 2025',
+    occupation: 'Président JCI Sidi Mansour 2025',
   },
   {
     avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1734630030/437491181_7322973101129634_3063626686712410848_n-removebg-preview_m0iirv.png",
     name: 'Sahar MEJRI',
-    occupation: 'Présidente JCI Gremda 2025',
+    occupation: 'Président JCI Gremda 2025',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739030581/rcro3ttjbzmzwxjbihss.png",
+    name: 'Manel BEN LTAIEF',
+    occupation: 'Chef comité média',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739031611/Ramzi_pixmzq.png",
+    name: 'Ramzi SOUSSI',
+    occupation: 'Chef comité sponsoring',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739034170/Design_sans_titre_4_owzjhb.png",
+    name: 'Salma RJEB',
+    occupation: 'Chef comité événement',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739034159/Design_sans_titre_5_j8kkwz.png",
+    name: 'Mohamed GHORBEL',
+    occupation: 'Chef comité logistique',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739035612/Design_sans_titre_11_yedbrs.png",
+    name: 'Bilel ABDELMAKSOUD',
+    occupation: 'Chef comité développement',
+  },
+  {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739035627/Gassen_r2apuf.png",
+    name: 'Gassen EL KAMEL',
+    occupation: 'Chef comité développement',
   },
 ];
 

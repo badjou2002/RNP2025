@@ -25,7 +25,7 @@ export default function LocationRNP() {
             sx={{ width: '100%', display: { xs: 'flex', sm: 'flex' } }}
           >
             <Typography component="h2" variant="h5" color="text.primary" sx={{ ml: 1, fontSize: { sm: '20px', xs: '15px' } }}>
-              Hotel L'Orient Palace Sousse
+              Hôtel Riviera Sousse Port El Kantaoui
             </Typography>
             <Typography component="h2" variant="h6" color="text.primary" sx={{ ml: 1, fontSize: { sm: '20px', xs: '15px' } }}>
               <EventIcon sx={{ mr: 1, mb: -0.5 }} />
@@ -36,7 +36,7 @@ export default function LocationRNP() {
             </Typography>
             <Typography component="h2" variant="h6" color="text.primary" sx={{ ml: 1, fontSize: { sm: '20px', xs: '15px' } }}>
               <LocationOnIcon sx={{ mr: 1, mb: -0.5 }} />
-              VJ68+6FR, Av. 14 Janvier, Sousse 4051
+              PORT EL KANTAOUI (BP55),<br />Hammam Sousse 4089
             </Typography>
             <Typography component="h2" variant="body1" color="text.primary" sx={{ ml: 2, mt: -2, fontSize: { sm: '16px', xs: '12px' } }}>
               Adresse
@@ -49,7 +49,7 @@ export default function LocationRNP() {
           md={7}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3233.459492909338!2d10.617393477461329!3d35.86225496577845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8a0c85142b6f%3A0xbd8001a3614f6d92!2sOrient%20Palace%20Hotel!5e0!3m2!1sen!2sus!4v1733840272750!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.832436199605!2d10.582440275836158!3d35.90211937251675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd89983e12d49b%3A0x8497d3566425a0da!2sH%C3%B4tel%20Riviera%20Sousse%20Port%20El%20Kantaoui!5e0!3m2!1sfr!2stn!4v1739031812788!5m2!1sfr!2stn"
             width="100%"
             height="350"
             style={{ border: 0 }}

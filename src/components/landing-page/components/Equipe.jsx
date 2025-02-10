@@ -60,7 +60,7 @@ const userTestimonials = [
   },
   {
     avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739035627/Gassen_r2apuf.png",
-    name: 'Gassen EL KAMEL',
+    name: 'Ghassen EL KAMEL',
     occupation: 'Chef comité développement',
   },
 ];

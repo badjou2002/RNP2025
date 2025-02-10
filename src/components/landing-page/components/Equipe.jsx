@@ -29,6 +29,11 @@ const userTestimonials = [
     occupation: 'Président JCI Gremda 2025',
   },
   {
+    avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739201419/Design_sans_titre_14_awy1wj.png",
+    name: 'Mahdi TRABELSI',
+    occupation: 'Trésorier',
+  },
+  {
     avatar: "https://res.cloudinary.com/dhh8gu8oi/image/upload/v1739030581/rcro3ttjbzmzwxjbihss.png",
     name: 'Manel BEN LTAIEF',
     occupation: 'Chef comité média',
@@ -60,21 +65,8 @@ const userTestimonials = [
   },
 ];
 
-const whiteLogos = [
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/volkswagen-vento_used_01506513620_irszyb.jpg',
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/78719_rzfqrl.jpg',
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/42ae7e5a-b302-452c-a703-4104cf0205f4-w1000__rzajrr.webp',
-];
-
-const darkLogos = [
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/volkswagen-vento_used_01506513620_irszyb.jpg',
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/78719_rzfqrl.jpg',
-  'https://res.cloudinary.com/dhh8gu8oi/image/upload/v1716674018/images/42ae7e5a-b302-452c-a703-4104cf0205f4-w1000__rzajrr.webp',
-];
-
 export default function Equipe() {
   const theme = useTheme();
-  const logos = theme.palette.mode === 'light' ? darkLogos : whiteLogos;
 
   return (
     <Container

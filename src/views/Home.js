@@ -3,9 +3,11 @@ import HeroVideo from '../components/sections/HeroVideo';
 import HeroSplit from '../components/sections/HeroSplit';
 import Team from '../components/sections/Team/Team';
 import Roadmap from '../components/sections/Roadmap';
+import PostScrole from '../components/sections/PostScrole';
 import CountDown from '../components/sections/countdown/CountDown';
 import { Box } from '@mui/material';
 import Localisation from '../components/sections/Localisation';
+import LogosSection from '../components/sections/LogoPar';
 
 const Home = () => {
   const [boxWidth, setBoxWidth] = useState("50vw");
@@ -65,12 +67,16 @@ const Home = () => {
           <div className='section-header reveal-from-bottom'>
             <CountDown />
           </div>
+          {/* {<LogosSection />
+          <div id="Partenaire"></div>} */}
           <Localisation />
           <div id="Localisation"></div>
-          <Team className="illustration-section-01" />
+          <Team />
           <div id="Equipe"></div>
-          {/* <Roadmap topOuterDivider />
-          <div id="Chronologie"></div>*/}
+          {/* { <PostScrole topOuterDivider />
+          <div id="Media"></div>} */}
+          <Roadmap topOuterDivider />
+          <div id="Chronologie"></div>
         </Box>
       </div>
     </React.Fragment>

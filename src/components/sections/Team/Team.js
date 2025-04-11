@@ -2,9 +2,10 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../../utils/SectionProps';
 import SectionHeader from '../partials/SectionHeader';
-import { Box, Grid,  Typography} from '@mui/material';
+import { Box, Grid, Link, styled, useMediaQuery } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
 import TeamMemberCard from './components/TeamMemberCard';
+import { useTheme } from '@emotion/react';
 
 const userTestimonials = [
   {
@@ -155,6 +156,22 @@ const userTestimonials = [
   },
 ];
 
+const ScrollContainer = styled('div')({
+  display: 'flex',
+  gap: '17px',
+  overflowX: 'auto',
+  scrollSnapType: 'x mandatory',
+  padding: '2px',
+  '&::-webkit-scrollbar': {
+    display: 'none'
+  },
+});
+
+const ScrollItem = styled(motion.div)({
+  scrollSnapAlign: 'center',
+  flex: '0 0 auto',
+});
+
 const propTypes = {
   ...SectionTilesProps.types
 };
@@ -200,32 +217,52 @@ const Team = (props) => {
     paragraph: 'Comité de pilotage de la Première Réunion Nationale des Présidents - JCI Tunisie.'
   };
 
+  const [plus, setPlus] = React.useState(false);
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <section className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content reveal-from-bottom" />
-          <div className={tilesClasses} >
-            <AnimatePresence mode="wait">
-              <motion.div key={'all'} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-                <Grid container spacing={4} sx={{ justifyContent: 'center', }}>
-                  {userTestimonials.length > 0 ? (
-                    userTestimonials.map((member, index) => (
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <SectionHeader data={sectionHeader} className={isXs ? "center-content reveal-from-bottom" : "reveal-from-bottom"} />
+            {!isXs && <Link component="button" onClick={() => { setPlus(!plus) }} className="reveal-from-bottom" sx={{ textDecoration: 'none  !important', color: 'inherit' }}>{plus ? 'moins...' : 'plus...'}</Link>
+            } </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={'all'}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className={tilesClasses}>
+                {plus ?
+                  <Grid container spacing={4} sx={{ justifyContent: 'center', }}>
+                    {userTestimonials.map((member, index) => (
                       <Grid item key={member.id} xs={12} sm={6} md={4} >
                         <TeamMemberCard member={member} index={index} />
                       </Grid>
-                    ))
-                  ) : (
-                    <Box sx={{ width: '100%', textAlign: 'center', py: 8 }}>
-                      <Typography variant="h6" color="text.secondary">
-                        Aucun membre de l'équipe ne correspond à votre recherche.
-                      </Typography>
-                    </Box>
-                  )}
-                </Grid>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+                    ))}
+                  </Grid>
+                  : <Box sx={{ maxWidth: '100%', overflowX: 'auto' }}>
+                    <ScrollContainer>
+                      {userTestimonials.map((member, index) => (
+                        <ScrollItem
+                          key={index}
+                          initial={{ opacity: 0, y: 30 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, delay: index * 0.1 }}
+                          style={{ width: 355 }}
+                          className="reveal-from-bottom"
+                        >
+                          <TeamMemberCard member={member} index={index} />
+                        </ScrollItem>
+                      ))}
+                    </ScrollContainer>
+                  </Box>}
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

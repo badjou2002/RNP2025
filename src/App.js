@@ -8,9 +8,12 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme();
 
 class App extends React.Component {
-  
+
   constructor(props) {
     super(props);
     // Créer la référence avec createRef
@@ -31,14 +34,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <ScrollReveal
-        ref={this.scrollReveal} // Assigner la ref
-        children={() => (
-          <Switch>
-            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          </Switch>
-        )}
-      />
+      <ThemeProvider theme={theme}>
+
+        <ScrollReveal
+          ref={this.scrollReveal} // Assigner la ref
+          children={() => (
+            <Switch>
+              <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+            </Switch>
+          )
+          }
+        />
+      </ThemeProvider>
     );
   }
 }

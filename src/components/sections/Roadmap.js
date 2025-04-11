@@ -57,33 +57,67 @@ class Roadmap extends React.Component {
           <div className={innerClasses} >
             <SectionHeader data={sectionHeader} />
             <Timeline>
-              <TimelineItem title={"18 Avril 2025T13h00"}>
-                Ouverture et intronisation des présidents
+              <TimelineItem title={"18 Avril 2025T12h00"}>
+                Acceuil et inscription
               </TimelineItem>
               <TimelineItem title={"18 Avril 2025T15h00"}>
-                Cocktail de bienvenue
+                Académie d'entreprenariat
               </TimelineItem>
-              <TimelineItem title={"18 Avril 2025T16h00"}>
-                Formation 'Compétition CYE'
+              <TimelineItem title={"18 Avril 2025T17h00"}>
+                ProtocolMaster
               </TimelineItem>
-              <TimelineItem title={"18 Avril 2025T15h00"}>
+              <TimelineItem title={"18 Avril 2025T19h00"}>
                 Diner
               </TimelineItem>
-              <TimelineItem title={"18 Avril 2025T15h00"}>
-                Soirée compétition
+              <TimelineItem title={"18 Avril 2025T21h00"}>
+                Compétition CYE 1ére partie
+              </TimelineItem>
+              <TimelineItem title={"18 Avril 2025T22h00"}>
+                JCI Trivia Battle – Le quiz ultime sur la JCI
+              </TimelineItem>
+              <TimelineItem title={"18 Avril 2025T21h30"}>
+                Réunion BND
+              </TimelineItem>
+              <TimelineItem title={"18 Avril 2025T23h30"}>
+                Réunion BNE
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T06h00">
+                Petit déjeuner
               </TimelineItem>
               <TimelineItem title="19 Avril 2025T09h00">
-                Formation et panels
+                Compétition CYE 2eme partie
               </TimelineItem>
-              <TimelineItem title="19 Avril 2025T21h00">
-                Ifrikiya village
+              <TimelineItem title="19 Avril 2025T09h00">
+                Community Action
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T12h00">
+                Déjeuner
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T14h00">
+                Céremonie d'ouverture
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T17h00">
+                Assemblée génerale - 1ére partie
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T19h30">
+                Diner
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T21h30">
+                Réunion avec les membres COC -congrés
+              </TimelineItem>
+              <TimelineItem title="19 Avril 2025T21h30">
+                AFRICA VILLAGE
+              </TimelineItem>
+              <TimelineItem title="20 Avril 2025T06h00">
+                Petit déjeuner
               </TimelineItem>
               <TimelineItem title="20 Avril 2025T09h00">
-                Réunion
+                Assemblée génerale - 2éme partie
               </TimelineItem>
-              <TimelineItem title="20 Avril 2025T13h00">
+              <TimelineItem title="20 Avril 2025T13h30">
                 Checkout
               </TimelineItem>
+
             </Timeline>
           </div>
         </div>

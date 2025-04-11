@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import Logo from './partials/Logo';
 
 const propTypes = {
   active: PropTypes.bool,
@@ -148,10 +147,12 @@ class Header extends React.Component {
                       <li>
                         <Link to="#Equipe" onClick={() => scrollToSection('Equipe')}>Equipe</Link>
                       </li>
-                      {/* <li>
+                     {/* { <li>
+                        <Link to="#Multimédia" onClick={() => scrollToSection('Media')}>Multimédia</Link>
+                      </li>} */}
+                      <li>
                         <Link to="#Chronologie" onClick={() => scrollToSection('Chronologie')}>Chronologie</Link>
-                      </li>*/}
-                    </ul>
+                      </li>                  </ul>
                     {!hideSignin &&
                       <ul className="list-reset header-nav-right">
                         <li>

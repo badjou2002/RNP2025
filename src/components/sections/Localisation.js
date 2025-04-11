@@ -33,7 +33,7 @@ class Localisation extends React.Component {
     } = this.props;
 
     const outerClasses = classNames(
-      'team section center-content',
+      'team section ',
       topOuterDivider && 'has-top-divider',
       bottomOuterDivider && 'has-bottom-divider',
       hasBgColor && 'has-bg-color',
